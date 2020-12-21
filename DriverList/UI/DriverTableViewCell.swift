@@ -14,4 +14,11 @@ class DriverTableViewCell: UITableViewCell {
     @IBOutlet weak var distanceLabel: UILabel!
     // Kind of a data protection leak, since it's actually emails...
     @IBOutlet weak var usrIdLabel: UILabel!
+    
+    func setDriverInformation(_ driverInformation: DriverInformation) {
+        rankLabel.text = "# \(driverInformation.rank)"
+        userLabel.text = driverInformation.user
+        scoreLabel.text = NSLocalizedString("withScore", comment: "user score UI description")+" \(driverInformation.score)"
+        distanceLabel.text = String.localizedStringWithFormat(NSLocalizedString("withDistance %f", comment: "user distance UI description"), driverInformation.distance)
+    }
 }
