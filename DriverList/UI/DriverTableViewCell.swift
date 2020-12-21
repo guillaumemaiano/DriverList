@@ -20,5 +20,6 @@ class DriverTableViewCell: UITableViewCell {
         userLabel.text = driverInformation.user
         scoreLabel.text = NSLocalizedString("withScore", comment: "user score UI description")+" \(driverInformation.score)"
         distanceLabel.text = String.localizedStringWithFormat(NSLocalizedString("withDistance %f", comment: "user distance UI description"), driverInformation.distance)
+        usrIdLabel.text = driverInformation.userId
     }
 }

@@ -30,20 +30,22 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="124.5" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eE-Po-2yF" userLabel="rankLbl">
-                                                            <rect key="frame" x="0.0" y="0.0" width="83" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PE-GD-mgf" userLabel="userLbl">
-                                                            <rect key="frame" x="83" y="0.0" width="41.5" height="20.5"/>
+                                                            <rect key="frame" x="62.5" y="0.0" width="62" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="7eE-Po-2yF" firstAttribute="width" secondItem="4PE-GD-mgf" secondAttribute="width" multiplier="2" id="jvg-uB-kah"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4PE-GD-mgf" secondAttribute="trailing" id="k0W-Mj-udk"/>
+                                                        <constraint firstItem="4PE-GD-mgf" firstAttribute="width" secondItem="si1-69-sE4" secondAttribute="width" multiplier="0.5" id="nfa-MV-yG3"/>
+                                                        <constraint firstItem="7eE-Po-2yF" firstAttribute="leading" secondItem="si1-69-sE4" secondAttribute="leading" id="ubD-b0-UJd"/>
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbS-uv-Y0n">
