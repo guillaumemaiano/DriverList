@@ -16,6 +16,7 @@
 		B6BAAC1A2590E5B200E153E0 /* DriverListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BAAC192590E5B200E153E0 /* DriverListTests.swift */; };
 		B6BAAC252590E5B200E153E0 /* DriverListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BAAC242590E5B200E153E0 /* DriverListUITests.swift */; };
 		B6BAAC362590E7CC00E153E0 /* Note.md in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAC352590E7CC00E153E0 /* Note.md */; };
+		B6BAAC512590EFD300E153E0 /* DriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BAAC502590EFD300E153E0 /* DriverTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B6BAAC3F2590E9A500E153E0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		B6BAAC402590E9A500E153E0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		B6BAAC452590E9C800E153E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B6BAAC502590EFD300E153E0 /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +107,9 @@
 		B6BAAC012590E5AF00E153E0 /* DriverList */ = {
 			isa = PBXGroup;
 			children = (
+				B6BAAC4F2590EFA600E153E0 /* UI */,
 				B6BAAC022590E5AF00E153E0 /* AppDelegate.swift */,
 				B6BAAC042590E5AF00E153E0 /* SceneDelegate.swift */,
-				B6BAAC062590E5AF00E153E0 /* ViewController.swift */,
 				B6BAAC082590E5AF00E153E0 /* Main.storyboard */,
 				B6BAAC0B2590E5B100E153E0 /* Assets.xcassets */,
 				B6BAAC0D2590E5B100E153E0 /* LaunchScreen.storyboard */,
@@ -133,6 +135,15 @@
 				B6BAAC262590E5B200E153E0 /* Info.plist */,
 			);
 			path = DriverListUITests;
+			sourceTree = "<group>";
+		};
+		B6BAAC4F2590EFA600E153E0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B6BAAC062590E5AF00E153E0 /* ViewController.swift */,
+				B6BAAC502590EFD300E153E0 /* DriverTableViewCell.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 				B6BAAC072590E5AF00E153E0 /* ViewController.swift in Sources */,
 				B6BAAC032590E5AF00E153E0 /* AppDelegate.swift in Sources */,
 				B6BAAC052590E5AF00E153E0 /* SceneDelegate.swift in Sources */,
+				B6BAAC512590EFD300E153E0 /* DriverTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

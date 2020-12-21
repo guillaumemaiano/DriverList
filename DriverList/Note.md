@@ -12,3 +12,7 @@ yields:
 
 Basic storyboard-enabled solution
 Localization in English (dev lang) and French (BartyCrouch via brew for clean updates of localized files)
+
+## Tests
+
+Two hours, no time.
