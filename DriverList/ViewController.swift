@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RankingsViewController: UITableViewController {
+    
+    let DRIVER_CELL_IDENTIFIER = "DriverCellIdentifier" // set in storyboard for reuse id
 
     override func viewDidLoad() {
         super.viewDidLoad()
