@@ -13,6 +13,7 @@ class RankingsViewController: UITableViewController {
     
     let DRIVER_CELL_IDENTIFIER = "DriverCellIdentifier" // set in storyboard for reuse id
     let sections: Int = 1 // we don't need multiple sections ATM.
+    let rowHeight: CGFloat = 80.0 // basic height, will adapt if time remains
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +49,8 @@ class RankingsViewController: UITableViewController {
             return 0 // No coder added another section in, so don't crash :)
         }
     }
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return rowHeight;
+    }
 }
 
