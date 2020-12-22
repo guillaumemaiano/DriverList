@@ -21,6 +21,7 @@
 		B6BAAC692591035100E153E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAC6B2591035100E153E0 /* Localizable.strings */; };
 		B6BAAC7A2591074A00E153E0 /* DriverStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BAAC792591074A00E153E0 /* DriverStore.swift */; };
 		B6BAAC832591110500E153E0 /* DriverStoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BAAC822591110500E153E0 /* DriverStoreViewModel.swift */; };
+		B6F3328E259277C100871070 /* DLObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3328D259277C100871070 /* DLObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		B6BAAC6F2591041900E153E0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B6BAAC792591074A00E153E0 /* DriverStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStore.swift; sourceTree = "<group>"; };
 		B6BAAC822591110500E153E0 /* DriverStoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStoreViewModel.swift; sourceTree = "<group>"; };
+		B6F3328D259277C100871070 /* DLObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				B6BAAC822591110500E153E0 /* DriverStoreViewModel.swift */,
+				B6F3328D259277C100871070 /* DLObservable.swift */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				B6BAAC832591110500E153E0 /* DriverStoreViewModel.swift in Sources */,
 				B6BAAC072590E5AF00E153E0 /* RankingsViewController.swift in Sources */,
+				B6F3328E259277C100871070 /* DLObservable.swift in Sources */,
 				B6BAAC032590E5AF00E153E0 /* AppDelegate.swift in Sources */,
 				B6BAAC5D2590F49800E153E0 /* DriverInformation.swift in Sources */,
 				B6BAAC052590E5AF00E153E0 /* SceneDelegate.swift in Sources */,
