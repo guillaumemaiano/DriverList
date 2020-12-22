@@ -7,13 +7,19 @@
 
 import UIKit
 
-class RankingsViewController: UITableViewController {
+final class RankingsViewController: UITableViewController {
     
     
     
     let DRIVER_CELL_IDENTIFIER = "DriverCellIdentifier" // set in storyboard for reuse id
     let sections: Int = 1 // we don't need multiple sections ATM.
     let rowHeight: CGFloat = 80.0 // basic height, will adapt if time remains
+    let driverStoreViewModel = DriverStoreViewModel() // needs to be binded
+
+    @IBAction func refreshControlValueChanged(_ sender: UIRefreshControl) {
+        driverStoreViewModel.requestRefresh() // reloadData is commanded by the VM
+        sender.endRefreshing() // do not wait for the actual new data to remove the refresh indicator
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +33,7 @@ class RankingsViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.layoutIfNeeded()
+        driverStoreViewModel.requestRefresh()  // reloadData is commanded by the VM
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
