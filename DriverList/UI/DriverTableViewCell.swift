@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DriverTableViewCell: UITableViewCell {
+final class DriverTableViewCell: UITableViewCell {
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var userLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -17,7 +17,7 @@ class DriverTableViewCell: UITableViewCell {
     
     func setDriverInformation(_ driverInformation: DriverInformation) {
         rankLabel.text = "# \(driverInformation.rank)"
-        userLabel.text = driverInformation.user
+        userLabel.text = driverInformation.user ?? ""
         scoreLabel.text = NSLocalizedString("withScore", comment: "user score UI description")+" \(driverInformation.score)"
         distanceLabel.text = String.localizedStringWithFormat(NSLocalizedString("withDistance %f", comment: "user distance UI description"), driverInformation.distance)
         usrIdLabel.text = driverInformation.userId
