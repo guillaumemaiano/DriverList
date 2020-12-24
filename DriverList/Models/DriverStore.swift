@@ -8,7 +8,7 @@
 import Foundation
 
 class DriverStore {
-    var drivers: [DriverInformation] = []
+    var drivers: DLObservable<[DriverInformation]> = DLObservable([])
     var verboseNetwork = false // debug var
     
     // this should have the capacity to get the data from the API
@@ -44,7 +44,7 @@ class DriverStore {
                 print("No data")
                 return
             }
-            self.drivers = self.convertDataToDrivers(data: data)
+            self.drivers.value = self.convertDataToDrivers(data: data)
             if let error = error {
                 print(error.localizedDescription)
             }
